@@ -1,0 +1,50 @@
+.eachProductBuyingBlock {
+    width: 481px;
+    height: 696px;
+}
+
+.eachProductPrice {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 245px;
+    height: 57.11px;
+    span {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.51px;
+        color: #FF1818;
+    }
+}
+
+.buyingButtons {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    button {
+        width: 296px;
+        margin: 10px auto;
+        height: 75px;
+        padding: 24px 60px 24px 60px;
+        border-radius: 50px;
+        background: linear-gradient(93.95deg, #FF1818 12.62%, #F2312D 92.9%);
+        box-shadow: 0px 15px 30px 0px #E32F1F26;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.buyingButtons .buyNow {
+    padding: 24px 53px 24px 53px;
+    background: #002C6A;
+    box-shadow: 0px 15px 30px 0px #002C6A26;
+}

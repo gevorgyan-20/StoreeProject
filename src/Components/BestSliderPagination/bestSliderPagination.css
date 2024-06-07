@@ -1,0 +1,23 @@
+.bestSliderPagination {
+    width: 1195px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        height: 10px;
+        width: 393px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            padding: 0;
+            cursor: pointer;
+            background-color: #B3C0D2;
+            border: none;
+        }
+    }
+}

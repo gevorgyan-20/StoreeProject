@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.BootSizesFilter{
+    width: 333px;
+    height: 312px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    border-radius: 5px ;
+   h1{
+    width: 97px;
+    height: 29px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #002C6A;
+   }
+}
+
+.FSizesBlock{
+ width: 323px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 15px;
+ span{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    padding:  10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    cursor: pointer;
+    text-align: center;
+    color:  #002C6A;
+    transition: all 0.1s
+    ;
+    &:hover{
+        background: #FF1818;
+        color: #FFFFFF;
+    
+}
+ }
+}
+

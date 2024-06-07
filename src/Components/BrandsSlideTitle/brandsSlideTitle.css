@@ -1,0 +1,14 @@
+.brandsSlideTitle {
+    width: 499px;
+    height: 59px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    span {
+        font: Montserrat;
+        color: #002C6A;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.51px;
+    }
+}

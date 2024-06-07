@@ -1,0 +1,66 @@
+.FilterFormButtons{
+    display:flex;
+    flex-direction: column;
+    gap: 66px;
+    padding-top: 33px;
+    width: 201px;
+    height: 188px;
+}
+
+.FilterSale{
+    width: 104px;
+    height: 33px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    input{
+        width: 33px;
+        height: 33px;
+    }
+
+    p{
+        width: 53px;
+        height: 29px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #002C6A;
+    }
+}
+
+.FilterSubmitButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+ 
+}
+
+.FiltEnterButt,.FiltCancelButt{
+    width:  218px;
+    height: 56px;
+    padding: 20px 53px;
+    border: none;
+    border-radius: 50px; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    background: #FF1818;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px 0px #E32F1F26;
+    &:hover{
+        background: #FF4218;
+    }
+
+}
+
+.FiltCancelButt{
+    background: #B3C0D2;
+    box-shadow: 0px 15px 30px 0px #8B8C8D1A;
+}

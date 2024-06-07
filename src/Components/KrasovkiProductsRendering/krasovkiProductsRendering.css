@@ -1,0 +1,9 @@
+.krasovkiProductsRendering {
+    width: 825px;
+    margin: 0 auto;
+    height: 2254px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

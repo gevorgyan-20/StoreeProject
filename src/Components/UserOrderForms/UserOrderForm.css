@@ -1,0 +1,142 @@
+.UserOrderForms{
+    width: 1440%;
+    max-width: 100%;
+    height: 800px;
+    display: flex;
+    gap: 66px;
+}
+
+.UForms{
+    width: 950px;
+    padding-top: 60px;
+}
+
+.UserInfo{
+    display: flex;
+    gap: 55px;
+}
+
+.UInfLeft,.UInfRight{
+    width: 474px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h1{
+        max-width: 230px;
+        height: 29px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        text-align: left;
+        color:  #002C6A;
+        
+    }
+
+    input{
+        width: 473px;
+        height: 42px;
+        font-family: "Ruda", sans-serif;
+        font-size: 24px;        
+        font-weight: 400;
+        line-height: 29.21px;
+        text-align: left;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #002C6A;
+    }
+}
+
+.UserAddressForms{
+   display: flex;
+   width: 1004px;
+   height: 424px;
+   gap: 66px;
+   h1{
+    max-width: 365px;
+    height: 29px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: left;
+    color:  #002C6A;
+   }
+}
+
+.UAddressForm{
+    max-width: 471px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input{
+        width: 470px;
+        height: 42px;
+        font-family: "Ruda", sans-serif;
+        font-size: 24px;        
+        font-weight: 400;
+        line-height: 29.21px;
+        text-align: left;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #002C6A;
+    }
+}
+
+.UAddressNumb{
+    display: flex;
+    width: 471px;
+    gap: 55px;
+    input{
+        width: 95px;
+        height: 40px;
+    }
+}
+
+.UserContact{
+    width: 475px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.7s;
+    input{
+        width: 470px;
+        height: 42px;
+        font-family: "Ruda", sans-serif;
+        font-size: 24px;        
+        font-weight: 400;
+        line-height: 29.21px;
+        text-align: left;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #002C6A;
+    }
+}
+
+.UContactWebSite{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    h1{
+        
+        font-family: "Montserrat", sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 29.26px;
+        text-align: left;
+        color:  #29292D;
+        ;
+        
+    }
+    div{
+        display: flex;
+        gap: 33px;
+    }
+    svg:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+        transition: all 0.8s;
+    }
+}

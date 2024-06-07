@@ -1,0 +1,72 @@
+.eachProductBuyingSizes {
+    width: 481px;
+    height: 282px;
+    box-shadow: 5px 20px 60px 0px #165CBF26;
+    border-radius: 20px;
+}
+
+.sizesTitle {
+    width: 265px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    span {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 29.26px;
+        text-align: center;
+        color: #29292D;
+    }
+}
+
+.allSizes {
+    height: 250px;
+    margin: 0 auto;
+    width: 385px;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.eachSize {
+    width: 80px;
+    cursor: pointer;
+    height: 51px;
+    border-radius: 7px;
+    transition: 0.4s;
+    div {
+        color: #002C6A;
+    }
+    &:hover {
+        div {
+            color: #FFFFFF;
+        }
+        background-color: red;
+    }
+}
+
+.sizeEUR {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.94px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
+
+.sizeCM {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: center;
+    height: 21px;
+    width: 100%;
+}

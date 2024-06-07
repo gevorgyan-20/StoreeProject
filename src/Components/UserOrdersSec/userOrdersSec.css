@@ -1,0 +1,80 @@
+.UserOrdersSec{
+    width: 1440px;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: baseline;
+    margin: 66px 0;
+    gap: 33px;
+}
+
+
+
+.UOrdersBlock{
+    width: 1015px;
+    height: 288px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.UOrdersNameHeader{
+    width: 1015px;
+    display: flex;
+    justify-content: space-around;
+  
+    h1{
+        max-width: 135px;
+        height: 22px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.94px;
+        text-align: center;
+        color:  #002C6A;
+        ;
+        
+    }
+}
+
+.UOrderItem{
+    width: 1015px;
+    height: 59px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    &:hover{
+        background: #FFFFFF;
+        box-shadow: 5px 10px 30px 0px #165CBF1A;
+
+    }
+
+    
+    input{
+        width: 33px;
+        height: 33px;
+    }
+    
+}
+
+
+.UOrderNumb,.UorderDate,.UOrderPrice,.UOrderArticleCount{
+    max-width: 135px;
+    max-height: 27px;
+    font-family: "Ruda", sans-serif;
+    font-size: 18px;
+    
+    font-weight: 400;
+    line-height: 21.91px;
+    text-align: left;
+    color:  #29292D;
+    &:hover{
+        color:  #002C6A; 
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+

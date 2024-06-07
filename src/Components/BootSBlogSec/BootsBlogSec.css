@@ -1,0 +1,178 @@
+.BootsBlogSec{
+    display: flex;
+    align-items: baseline;
+
+    gap: 60px;
+    max-width: 100%;
+    width: 1122px;
+    height: 488px;
+    margin: 0 auto;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+
+.BBlogHead{
+    width: 123px;
+    height: 59px;
+    position: relative;
+    top: 30px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    
+    color:  #002C6A;
+    
+}
+
+
+.BootsBlogLeftBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.BBlogBlock{
+    width: 540px;
+    max-height: 170px;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.15);
+       
+        
+    }
+    img{
+        width: 192px;
+        height: 170px;
+        
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 5px 20px 60px 0px #165CBF26;
+
+    }
+}
+
+.BBlogInf{
+    width: 348px;
+    height: 170px;
+    border-radius: 0 20px 20px 0;
+    background: #FFFFFF;
+    
+    box-shadow: 5px 20px 60px 0px #165CBF26;
+    h1{
+        width: 285px;
+        height: 44px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.94px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #002C6A;
+        margin-left: 16px;
+        
+    }
+
+    p{
+        width: 300px;
+        height: 51px;
+        font-family: "Ruda", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.04px;
+        letter-spacing: 0em;
+        margin-left: 16px;
+
+        text-align: left;
+        color: #29292D;
+        
+    }
+
+  
+
+}
+
+.BBlogNumbersInf{
+    display: flex;
+    padding: 0 18px;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    i{
+        width: 87px;
+        height: 15px;
+        font-family: "Ruda", sans-serif;
+        font-style: normal;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #B3C0D2;
+
+        
+    }
+
+    span{
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        gap: 3px;
+    }
+    
+    b{
+        width: 28px;
+        height: 15px;
+        font-style: normal;
+        font-family: "Ruda", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-decoration: none;
+        color:  #B3C0D2;
+        
+    }
+
+    svg{
+        position: relative;
+        top: 6px;
+    }
+}
+
+.BlogBonusForm{
+    
+    
+        width: 540px;
+        height: 239px;
+        position: relative;
+        top: 110px;    
+        margin-top: 50px;
+        border-radius: 20px;
+        background: #29292D;
+     
+        h1{
+            width: 410px;
+            height: 58px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 29.26px;
+            letter-spacing: 0em;
+            text-align: left;
+          
+            
+            color: #FFFFFF;
+                       
+        }
+    
+    
+}

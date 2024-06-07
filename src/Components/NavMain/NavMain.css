@@ -1,0 +1,8 @@
+.NavMainBox{
+    width: 100%;
+    height: 238px;
+    z-index: 1000;
+    /* position: sticky; */
+    /* top: 0; */
+    background-color: #fff;
+}

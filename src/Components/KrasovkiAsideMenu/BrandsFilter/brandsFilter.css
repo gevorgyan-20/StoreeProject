@@ -1,0 +1,64 @@
+.BrandsFilter{
+ width: 210px;
+ height: 349px;
+
+ h1{
+    width: 84px;
+    height:29px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #002C6A;
+ }
+}
+
+.FBrandsSelect{
+    width: 209.5px;
+    height: 282px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.FBrandsSelect::-webkit-scrollbar{
+   width: 3px;
+   
+}
+
+.FBrandsSelect::-webkit-scrollbar-track{
+    border: 1px solid #B3C0D2
+}
+
+.FBrandsSelect::-webkit-scrollbar-thumb{
+    border: 2px solid #FF1818;
+    border-radius: 3px;
+}
+
+.FBrandsItem{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 12px;
+    input{
+        width: 33px;
+        height: 33px;
+        border: 3px solid #B3C0D2;
+        cursor: pointer;
+        
+    }
+
+    p{
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:  #002C6A;
+        
+    }
+}

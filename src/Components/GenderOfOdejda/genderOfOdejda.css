@@ -1,0 +1,17 @@
+.genderBlocks {
+    width: 177px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.eachGenderBlock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}

@@ -1,0 +1,11 @@
+.odejdaPage {
+    padding-top: 40px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.odejda-aside-products {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}

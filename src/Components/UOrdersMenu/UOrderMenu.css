@@ -1,0 +1,34 @@
+.UOrdersMenu{
+    width: 190px;
+    height: 214px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    position: relative;
+    top: 55px;
+  svg{
+    position: relative;
+    left: 80%;
+    top: 20px;
+  }
+  a {
+    div {
+      width: 190px;
+    }
+  }
+}
+
+.UOrdersMenu .active{
+   width: 190px;
+   height: 100px;
+   background: #FFFFFF;
+   border-radius: 0 70px 70px 0;
+   box-shadow: 5px 10px 30px 0px #165CBF1A;
+   svg{
+    path {
+      fill: red;
+    }
+   }
+
+}

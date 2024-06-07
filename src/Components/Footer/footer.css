@@ -1,0 +1,147 @@
+footer{
+    width: 1536px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 298px;
+    background-color: #29292D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 90px;
+  }
+  
+  .logo{
+    background-image: url("./1.png");
+    background-size: cover;
+    width: 189.95px;
+    height: 190px;
+    margin: 50px 0;
+  }
+  
+  .info{
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 220px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .websites {
+    width: 164.96px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mainInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    div {
+        display: flex;
+        align-items: center;
+    }
+    span{
+        color:#B3C0D2;
+      }
+  }
+
+  .menu{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 130.97px;
+    height: 145px;
+    button {
+        color: #B3C0D2;
+        cursor: pointer;
+        height: 18px;
+        background-color: unset;
+        border: none;
+        &:hover {
+            color: white;
+        }
+      }
+  }
+  
+  .poisk{
+    height: 110px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+.poisk-buttons {
+    width: 350px;
+    gap: 20px;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    div {
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 44px;
+        border-radius: 100%;
+        background: #191919;
+    }
+}
+
+.poisk-input {
+    width: 350px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        input {
+            width: 254.93px;
+            height: 44px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border: none;
+            background: #B3C0D233;
+            color: #C4C4C4;
+            font-family: Ruda;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            outline: none;
+            letter-spacing: 0em;
+            padding-left: 20px;
+            text-align: left;
+            &::placeholder {
+                padding-left: 10px;
+            }
+            &:active {
+                border: none;
+                outline: none;
+            }
+        }
+        button {
+            width: 94.97px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: none;
+            background-color: #191919;
+            height: 47px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
