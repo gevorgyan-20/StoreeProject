@@ -7,16 +7,19 @@ import BannerArrowIcon from './icon/BannerArrowIcon';
 import { Link } from 'react-router-dom';
 
 const HeadPageBanner = () => {
+      const [bannerText, setBannerText] = useState("Adidas Nite Jogger")
+      const textsArray = ["Adidas Nite Jogger", "Adidas Yeezy Boost", "Nike Air Maximy"]
       const [bannerImage, setBannerImage] = useState(BootsImg1)
       const imagesArray = [BootsImg1, BootsImg3, BootsImg2]
+      const filterTextsArray = textsArray.filter((el) => el !== bannerText)
       const filterImagesArray = imagesArray.filter((el) => el !== bannerImage)
     return (
        <section className='BannerSec'>
          <div className="BannerHeaderCont">
             <div className="BannerLeftBlock">
-               <h1>Adidas Nite Jogger</h1>
+               <h1>{bannerText}</h1>
                <p>Городские кроссовки в ярком стиле 80-х</p>
-               <button><Link to='/krasovki'>Смотреть все</Link></button>
+               <button style={{zIndex: "999"}}><Link to='/krasovki'>Смотреть все</Link></button>
             </div>
             <div className="BannerRightBlock">
                 <div className="BRectangle">
@@ -27,15 +30,15 @@ const HeadPageBanner = () => {
          <div className="BannerBottomBlock">
            <div className='BBootsBlock1'>
              <img src={filterImagesArray[0]} alt="" />
-             <p>Adidas Yeezy Boost</p>
-             <div onClick={() => setBannerImage(filterImagesArray[0])}>
+             <p>{filterTextsArray[0]}</p>
+             <div onClick={() => {setBannerImage(filterImagesArray[0]); setBannerText(filterTextsArray[0])}}>
               <BannerArrowIcon/>
              </div>
            </div>
            <div className='BBootsBlock2'>
              <img src={filterImagesArray[1]} alt="" />
-             <p>Nike Air Max</p>
-             <div onClick={() => setBannerImage(filterImagesArray[1])}>
+             <p>{filterTextsArray[1]}</p>
+             <div onClick={() => {setBannerImage(filterImagesArray[1]); setBannerText(filterTextsArray[1])}}>
               <BannerArrowIcon/>
              </div>
            </div>
