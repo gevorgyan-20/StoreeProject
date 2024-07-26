@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchClothesData } from "./API";
+import { clothesDatabase } from "./API";
 
 const clothesSlice = createSlice({
   name: "clothes",
   initialState: {
-    clothesData: [],
-    odejdaData: { array: [], index: 1 },
+    clothesData: clothesDatabase,
+    odejdaData: { array: clothesDatabase.slice(1, 19), index: 1 },
     asideFilterData: { price: null, category: null, gender: null, color: null, sale: null },
     filterData: { array: [], renderingArray: [], isFiltering: false },
   },
@@ -58,19 +58,7 @@ const clothesSlice = createSlice({
     closeFilteringOdejda(state, { payload }) {
       state.filterData.isFiltering = false;
     },
-  },
-  extraReducers: (builder) => {
-    builder.addCase(fetchClothesData.fulfilled, (state, { payload }) => {
-      return {
-        ...state,
-        clothesData: payload,
-        odejdaData: {
-          index: state.odejdaData.index,
-          array: payload.slice((state.odejdaData.index - 1) * 18 + 1, (state.odejdaData.index - 1) * 18 + 19),
-        },
-      };
-    });
-  },
+  }
 });
 
 export const odejdaReducer = clothesSlice.reducer;

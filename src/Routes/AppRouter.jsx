@@ -1,14 +1,11 @@
 import React, { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Layout from "../Pages/Layout/Layout";
 import Home from "../Pages/Home/Home";
-import { fetchSneakersData } from "../Store/SneakersSlice/API";
 import { useDispatch } from "react-redux";
 import KrasovkiPage from "../Pages/Krasovki/KrasovkiPage";
 import BlogPage from "../Pages/Blog/BlogPage";
 import Odejda from "../Pages/Odejda/Odejda";
-import { fetchClothesData } from "../Store/ClothesSlice/API";
-import { fetchAccessoriesData } from "../Store/AccessoriesSlice/API";
 import Accessories from "../Pages/Accesories/Accessories";
 import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
 import EachProduct from "../Pages/EachProduct/EachProduct";
@@ -17,14 +14,21 @@ import Orders from "../Pages/Orders/Orders";
 
 function AppRouter() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchSneakersData());
-    dispatch(fetchClothesData());
-    dispatch(fetchAccessoriesData());
-  }, []);
+
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  };
+
   return (
     <div>
       <Routes>
+        {ScrollToTop()}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/krasovki" element={<KrasovkiPage />} />

@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchSneakersData } from "./API";
+import { sneakersDatabase } from "./API";
+
 
 const sneakersSlice = createSlice({
   name: "sneakers",
   initialState: {
-    sneakersData: [],
-    slidersData: [],
-    krasovkiData: { array: [], index: 1 },
+    sneakersData: sneakersDatabase,
+    slidersData: sneakersDatabase.slice(22, 41),
+    krasovkiData: { array: sneakersDatabase.slice(1,19), index: 1 },
     asideFilterData: { category: null, size: [], season: null, price: null, color: null, brand: null, sale: null },
     filterData: { array: [], renderingArray: [], isFiltering: false},
   },
@@ -66,21 +67,7 @@ const sneakersSlice = createSlice({
       state.filterData.isFiltering = false;
     }
   },
-  extraReducers: (builder) => {
-    builder.addCase(fetchSneakersData.fulfilled, (state, { payload }) => {
-      return {
-        ...state,
-        sneakersData: payload,
-        slidersData: payload.slice(22, 41),
-        krasovkiData: {
-          index: state.krasovkiData.index,
-          array: payload.slice((state.krasovkiData.index - 1) * 18 + 1, (state.krasovkiData.index - 1) * 18 + 19),
-        },
-        asideFilterData: state.asideFilterData,
-        filterData: state.filterData,
-      };
-    });
-  },
+  
 });
 
 export const sneakersReducer = sneakersSlice.reducer;
